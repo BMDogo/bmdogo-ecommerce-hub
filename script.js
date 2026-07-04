@@ -192,7 +192,7 @@ document.getElementById('enterPromo').addEventListener('click', () =>{
        
     if (userPromoCode.trim() === "BMDOGO20") {
         userPromoOffer = 0.20;
-        UserPromoCode.textContent = '';
+      //  UserPromoCode.textContent = '';
     } else {
         userPromoOffer = 0;
     }
