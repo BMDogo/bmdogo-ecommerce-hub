@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMDOGO E-COMMERCE HUB</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body class="dar">
+        <!-- === HEADER OF THE WEBSITE ==== -->
+        <header>
+        <div class="main-header">
+            <span class="brandName">BMDogo E-Commerce Hub</span>
+            <button id="toggleTheme">🌙 Dark-Mode</button>
+        </div>
+        <!-- ====SUB WEBSTIE HEADER -->
+        <div class="sub-header">
+            <input type="text" placeholder="Search A Template" id="search-item">
+            <form action="#">
+            <select name="filterProduct" id="filter-item">
+                <option value="All">All Product</option>
+                <option value="WebDev">Web Template</option>
+                <option value="Available">Available Product</option>
+                <option value="Unavailable">Out-Of-Stock</option>
+            </select>
+            </form>
+             <button id="filter">Filter Product</button>
+        </div>
+        <!-- ==== ACTIVE PROMO FLASH SECTION ==== -->
+         <section class="promo">
+            <marquee behavior="alternate" direction="right">⚡ ACTIVE PROMO FLASH: Get 20% off using code: BMDOGO20</marquee>
+         </section>
+        </header>
+
+        <!-- ===== MAIN WEB BODY PAGE ====== -->
+         <main>
+            <section class="product-section category">
+                <h2>Category sidebar</h2> 
+                <div class="category-item">
+                    <span>Web Template</span>
+                    <span>Code Component</span>
+                    <span>Design Assets</span> 
+                </div>
+            </section>
+            <section class="product-section product-item">
+                <h2>product item list</h2>
+                <div class="item-list" id="item-list">
+                    
+                </div>
+            </section>
+            <section class="product-section live-stream">
+                <h2>live system checkout</h2>
+                <div class="current-items">
+                    <h3>🛒 CURRENT ITEMS <span id="totalAdd">0</span></h3>
+                    <div class="current-item" id="current-item">
+                    </div>
+                </div>
+                <div class="promo-input">
+                    <h3>🏷️ PROMO CODE INPUT:</h3>
+                    <span class="inputs">
+                    <input type="text" id="promoCode" placeholder="Enter Promo Code...">
+                    <button id="enterPromo">Apply</button>
+                    </span>
+                </div>
+                <div class="bill-summary">
+                    <h3>🧾 BILLING SUMMARY</h3>
+                    <div class="bill-grid">
+                        <p>Sub-Total: <span id="subTotal">0.00</span></p>
+                        <p>Discount: <span id="discount">0.00</span></p>
+                        <p>VAT (7.5%): <span id="VAT">0.00</span></p>
+                        <p>Total Due: <span id="total">0.00</span></p>
+                        <button id="complete">Complete Purchase 💳</button>
+                    </div>
+                </div>
+            </section>
+         </main>
+         <footer>
+
+            <pre> 
+   Powered by: BMDogo Tech
+            @2026
+    < Code with Basheer >
+            </pre>
+         </footer>
+
+<script src="product.js"></script>
+</body>
+</html>
