@@ -39,7 +39,7 @@ function updateRecord(displayToUI) {
               <span class="${statusClass}">${statusName}</span>
              </div>
              <button class="add-btn" data-id="${product.id}">
-             Add To Chart
+             Add To Cart
              </button>
            </div>
        `;
@@ -138,7 +138,7 @@ function AddToChart(){
 function userCurrentList() {
     let userList = "";
     if (userShoppingList.length === 0) {
-       userShoppingBox.innerHTML = `<p class="nothing-Alert">Ops!! No Items found, Please add Items to you Chart</p>`;
+       userShoppingBox.innerHTML = `<p class="nothing-Alert">Ops!! No Items found, Please add Items to you Cart</p>`;
 
     } else {   
            userShoppingList.forEach((listName, listPosition) =>{
